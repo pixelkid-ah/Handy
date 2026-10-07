@@ -399,6 +399,10 @@
         "title": "Hapus Kata Pengisi",
         "description": "Menghapus kata pengisi umum dari transkripsi. Nonaktifkan untuk mempertahankannya."
       },
+      "voiceCommands": {
+        "title": "Spoken Punctuation",
+        "description": "Turns spoken commands such as \"Punkt\", \"Komma\" or \"neue Zeile\" into punctuation and line breaks. Works for German transcriptions only."
+      },
       "chineseScript": {
         "title": "Aksara Tionghoa",
         "description": "Menulis transkripsi Mandarin dan Kanton dengan aksara Sederhana atau Tradisional. Bahasa lain tidak diubah.",

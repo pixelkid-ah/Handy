@@ -399,6 +399,10 @@
         "title": "Премахване на думи паразити",
         "description": "Премахва често срещаните думи за колебание от транскрипциите. Изключете, за да ги запазите."
       },
+      "voiceCommands": {
+        "title": "Spoken Punctuation",
+        "description": "Turns spoken commands such as \"Punkt\", \"Komma\" or \"neue Zeile\" into punctuation and line breaks. Works for German transcriptions only."
+      },
       "chineseScript": {
         "title": "Китайска писменост",
         "description": "Записва транскрипциите на мандарин и кантонски с опростени или традиционни йероглифи. Другите езици остават непроменени.",

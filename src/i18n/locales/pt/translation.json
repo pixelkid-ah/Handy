@@ -399,6 +399,10 @@
         "title": "Remover palavras de preenchimento",
         "description": "Remove hesitações comuns das transcrições. Desative para mantê-las."
       },
+      "voiceCommands": {
+        "title": "Spoken Punctuation",
+        "description": "Turns spoken commands such as \"Punkt\", \"Komma\" or \"neue Zeile\" into punctuation and line breaks. Works for German transcriptions only."
+      },
       "chineseScript": {
         "title": "Escrita chinesa",
         "description": "Escreve as transcrições em mandarim e cantonês com caracteres simplificados ou tradicionais. Os outros idiomas não são alterados.",

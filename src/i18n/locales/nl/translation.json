@@ -399,6 +399,10 @@
         "title": "Opvulwoorden verwijderen",
         "description": "Verwijdert veelvoorkomende aarzelwoorden uit transcripties. Schakel dit uit om ze te behouden."
       },
+      "voiceCommands": {
+        "title": "Spoken Punctuation",
+        "description": "Turns spoken commands such as \"Punkt\", \"Komma\" or \"neue Zeile\" into punctuation and line breaks. Works for German transcriptions only."
+      },
       "chineseScript": {
         "title": "Chinees schrift",
         "description": "Schrijft Mandarijn- en Kantonese transcripties in vereenvoudigde of traditionele karakters. Andere talen blijven ongewijzigd.",

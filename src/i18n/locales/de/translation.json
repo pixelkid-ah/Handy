@@ -399,6 +399,10 @@
         "title": "Füllwörter entfernen",
         "description": "Entfernt häufige Verzögerungslaute aus Transkriptionen. Deaktivieren Sie diese Option, um sie beizubehalten."
       },
+      "voiceCommands": {
+        "title": "Gesprochene Satzzeichen",
+        "description": "Wandelt gesprochene Befehle wie „Punkt“, „Komma“ oder „neue Zeile“ in Satzzeichen und Zeilenumbrüche um. Funktioniert nur bei deutschen Transkriptionen."
+      },
       "chineseScript": {
         "title": "Chinesische Schrift",
         "description": "Schreibt Transkriptionen auf Mandarin und Kantonesisch in vereinfachten oder traditionellen Schriftzeichen. Andere Sprachen bleiben unverändert.",

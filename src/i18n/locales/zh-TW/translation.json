@@ -399,6 +399,10 @@
         "title": "移除語助詞",
         "description": "從轉錄中移除常見的語助詞。關閉此選項即可保留這些詞。"
       },
+      "voiceCommands": {
+        "title": "Spoken Punctuation",
+        "description": "Turns spoken commands such as \"Punkt\", \"Komma\" or \"neue Zeile\" into punctuation and line breaks. Works for German transcriptions only."
+      },
       "chineseScript": {
         "title": "繁簡轉換",
         "description": "將國語和粵語轉錄輸出為簡體或繁體中文。其他語言不受影響。",

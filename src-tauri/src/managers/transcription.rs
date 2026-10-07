@@ -1,6 +1,6 @@
 use crate::audio_toolkit::{
-    apply_custom_words, detect_output_language, normalize_transcription_output,
-    remove_filler_words, OutputLanguageEvidence,
+    apply_custom_words, apply_voice_commands, detect_output_language,
+    normalize_transcription_output, remove_filler_words, OutputLanguageEvidence,
 };
 use crate::chinese_script::{convert_chinese_script, ChineseVariety};
 use crate::engine_supervisor::{
@@ -1772,6 +1772,7 @@ fn post_process_transcription_text(
         let output_language = match output_language {
             OutputLanguageEvidence::Unknown
                 if converts_script
+                    || settings.voice_commands_enabled
                     || (settings.filler_word_removal_enabled
                         && settings.custom_filler_words.is_none()) =>
             {
@@ -1816,7 +1817,13 @@ fn post_process_transcription_text(
             settings.filler_word_removal_enabled,
         );
 
-        normalize_transcription_output(&without_fillers)
+        // Runs after normalization, which collapses whitespace and would
+        // otherwise flatten the line breaks the commands insert.
+        apply_voice_commands(
+            &normalize_transcription_output(&without_fillers),
+            &output_language,
+            settings.voice_commands_enabled,
+        )
     })
 }
 
